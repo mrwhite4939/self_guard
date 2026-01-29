@@ -155,7 +155,7 @@ TOCTTOU: time-of-check vs time-of-use gaps are possible.
 
 ### 📜 License
 
-MIT License – See [LICENSE] file.
+MIT License – See [![LICENSE](LICENSE) file.
 
 
 ---

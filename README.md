@@ -84,7 +84,7 @@ gcc -std=c11 -O2 -Wall -Wextra -Iinclude -o demo examples/main.c \
 ./demo
 ```
 
-One-Line Build:
+### One-Line Build:
 ```Bash
 as --64 -o asm_guard.o src/asm_guard.S && \
 g++ -c -std=c++17 -O2 -Wall -Wextra -fPIC -fstack-protector-strong \

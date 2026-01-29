@@ -78,12 +78,14 @@ ar rcs libself_guard.a self_guard.o guard_core.o asm_guard.o
 # Compile example/demo program
 gcc -std=c11 -O2 -Wall -Wextra -Iinclude -o demo examples/main.c \
     -L. -lself_guard -lstdc++ -pthread
-
+```
 # Run demo
+```Bash
 ./demo
+```
 
 One-Line Build:
-
+```Bash
 as --64 -o asm_guard.o src/asm_guard.S && \
 g++ -c -std=c++17 -O2 -Wall -Wextra -fPIC -fstack-protector-strong \
 -D_FORTIFY_SOURCE=2 -o guard_core.o src/guard_core.cpp && \
@@ -92,12 +94,13 @@ gcc -c -std=c11 -O2 -Wall -Wextra -fPIC -fstack-protector-strong \
 ar rcs libself_guard.a self_guard.o guard_core.o asm_guard.o && \
 gcc -std=c11 -O2 -Wall -Wextra -Iinclude -o demo examples/main.c \
 -L. -lself_guard -lstdc++ -pthread
+```
 
 
 ---
 
 📖 Example Usage
-
+```C
 #include "self_guard.h"
 
 int main(void) {
@@ -116,7 +119,7 @@ int main(void) {
     sg_shutdown();
     return 0;
 }
-
+```
 
 ---
 

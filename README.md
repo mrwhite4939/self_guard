@@ -79,7 +79,7 @@ ar rcs libself_guard.a self_guard.o guard_core.o asm_guard.o
 gcc -std=c11 -O2 -Wall -Wextra -Iinclude -o demo examples/main.c \
     -L. -lself_guard -lstdc++ -pthread
 ```
-# Run demo
+### Run demo
 ```Bash
 ./demo
 ```
@@ -99,7 +99,7 @@ gcc -std=c11 -O2 -Wall -Wextra -Iinclude -o demo examples/main.c \
 
 ---
 
-📖 Example Usage
+### 📖 Example Usage
 ```C
 #include "self_guard.h"
 
@@ -123,7 +123,7 @@ int main(void) {
 
 ---
 
-🔬 Security Guarantees
+### 🔬 Security Guarantees
 
 Memory Safety: No undefined behavior, bounds-checked arrays, RAII cleanup.
 
@@ -139,7 +139,7 @@ Compiler Hardening: -fstack-protector-strong, -D_FORTIFY_SOURCE=2, -fPIC, -O2.
 
 ---
 
-⚠️ Limitations
+### ⚠️ Limitations
 
 Cannot detect kernel-mode rootkits.
 
@@ -153,13 +153,13 @@ TOCTTOU: time-of-check vs time-of-use gaps are possible.
 
 ---
 
-📜 License
+### 📜 License
 
 MIT License – See LICENSE file.
 
 
 ---
 
-📬 Contact
+### 📬 Contact
 
 Email: mrwhite4939@gmail.com
